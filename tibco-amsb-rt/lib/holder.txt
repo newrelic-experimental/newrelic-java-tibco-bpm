@@ -1,0 +1,4 @@
+Find the corresponding jar in your Tibco BPM installation (* represents a version number)
+com.tibco.amsb.rt.common_*.jar
+com.tibco.mediation.task.rt_*.jar
+org.gxml.sa_*.jar
