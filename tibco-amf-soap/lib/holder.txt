@@ -1,0 +1,12 @@
+Find the corresponding jar in your Tibco BPM installation (* represents a version number)
+amx-bpm-java-service-connector-*.jar
+com.tibco.amf.binding.soap.runtime_*.jar
+com.tibco.amf.implementation.common.httpfilter_*.jar
+com.tibco.amf.platform.runtime.extension_*.jar
+com.tibco.amf.sharedresource.runtime.core.http_*.jar
+com.tibco.amf.sharedresource.runtime.tibcohost.http_*.jar
+com.tibco.amf.spline.api_*.jar
+com.tibco.amsb.core.engine_*.jar
+com.tibco.corona.binding.soap.model_*.jar
+com.tibco.neo.model.core_*.jar
+javax.wsdl-*.jar
