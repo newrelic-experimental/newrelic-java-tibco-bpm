@@ -1,0 +1,4 @@
+Find the corresponding jar in your Tibco BPM installation (* represents a version number)
+com.tibco.amf.spline.api_*.jar
+com.tibco.amf.spline.impl_*.jar
+com.tibco.amf.spline.launcher_*.jar
