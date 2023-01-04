@@ -6,4 +6,4 @@
 .project
 bin
 build
-lib/*.jar
+*/lib/*.jar
