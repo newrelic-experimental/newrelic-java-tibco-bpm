@@ -5,19 +5,15 @@ dependencies {
    implementation 'javax.resource:connector-api:1.5'
    implementation 'org.apache.httpcomponents:httpcore:4.4.5'
    implementation 'javax.jms:javax.jms-api:2.0.1'
-	implementation group: 'javax.transaction', name: 'javax.transaction-api', version: '1.3'
-	implementation group: 'org.eclipse.emf', name: 'org.eclipse.emf.ecore', version: '2.20.0'
-	
-   
+   implementation group: 'javax.transaction', name: 'javax.transaction-api', version: '1.3'
+   implementation group: 'org.eclipse.emf', name: 'org.eclipse.emf.ecore', version: '2.20.0'
    implementation 'javax.servlet:servlet-api:2.5'
-  implementation fileTree(include: ['*.jar'], dir: 'lib')
 
   // Agent and Weave API jars:
-  compile 'com.newrelic.agent.java:newrelic-api:5.11.0'
-  compile 'com.newrelic.agent.java:newrelic-weaver-api:5.11.0'
+  compile 'com.newrelic.agent.java:newrelic-api:6.4.1'
 
-  // New Relic internal: compile against the Bridge when required:
-  // compile 'com.newrelic.agent.java:agent-bridge:3.30.0'
+   implementation fileTree(include: ['*.jar'], dir: 'lib')
+   implementation fileTree(include: ['*.jar'], dir: '../libs')
 }
 
 jar {

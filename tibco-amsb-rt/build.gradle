@@ -2,14 +2,12 @@
 apply plugin: 'java'
 
 dependencies {
-  implementation fileTree(include: ['*.jar'], dir: 'lib')
 
   // Agent and Weave API jars:
-  implementation 'com.newrelic.agent.java:newrelic-api:3.30.0'
-  implementation 'com.newrelic.agent.java:newrelic-weaver-api:3.30.0'
+  implementation 'com.newrelic.agent.java:newrelic-api:6.4.1'
 
-  // New Relic internal: implementation against the Bridge when required:
-  // implementation 'com.newrelic.agent.java:agent-bridge:3.30.0'
+  implementation fileTree(include: ['*.jar'], dir: 'lib')
+  implementation fileTree(include: ['*.jar'], dir: '../libs')
 }
 
 jar {

@@ -2,19 +2,20 @@
 apply plugin: 'java'
 
 dependencies {
+  // Declare a dependency on each JAR you want to instrument, e.g.:
+  // compile 'org.apache.httpcomponents:httpclient:4.3.0'
 
   // Agent and Weave API jars:
-  compile 'com.newrelic.agent.java:newrelic-api:6.4.1'
+  compile 'com.newrelic.agent.java:newrelic-api:3.30.0'
+  compile 'com.newrelic.agent.java:newrelic-weaver-api:3.30.0'
 
   // New Relic internal: compile against the Bridge when required:
-  // compile 'com.newrelic.agent.java:agent-bridge:6.4.1'
-  implementation fileTree(include: ['*.jar'], dir: 'lib')
-  implementation fileTree(include: ['*.jar'], dir: '../libs')
+  // compile 'com.newrelic.agent.java:agent-bridge:3.30.0'
 }
 
 jar {
   manifest {
-       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-amsb-engine'
+       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-pvm-infra'
        attributes 'Implementation-Vendor': 'New Relic'
        attributes 'Implementation-Vendor-Id': 'Field Instrumentation'
        attributes 'Implementation-Version': 1.0

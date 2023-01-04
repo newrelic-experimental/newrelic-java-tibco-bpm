@@ -4,15 +4,16 @@ apply plugin: 'java'
 dependencies {
 
   // Agent and Weave API jars:
-  compile 'com.newrelic.agent.java:newrelic-api:6.4.1'
+  implementation 'com.newrelic.agent.java:newrelic-api:6.4.1'
 
-  compile fileTree(include: ['*.jar'], dir: 'lib')
-  compile fileTree(include: ['*.jar'], dir: '../libs')
+  implementation fileTree(include: ['*.jar'], dir: 'lib')
+  implementation fileTree(include: ['*.jar'], dir: '../libs')
+
 }
 
 jar {
   manifest {
-       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-amf-spline'
+       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-tcp-binding'
        attributes 'Implementation-Vendor': 'New Relic'
        attributes 'Implementation-Vendor-Id': 'Field Instrumentation'
        attributes 'Implementation-Version': 1.0
