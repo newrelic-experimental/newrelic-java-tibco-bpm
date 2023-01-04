@@ -1,0 +1,27 @@
+
+apply plugin: 'java'
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'lib')
+
+  // Agent and Weave API jars:
+  compile 'com.newrelic.agent.java:newrelic-api:3.30.0'
+  compile 'com.newrelic.agent.java:newrelic-weaver-api:3.30.0'
+
+  // New Relic internal: compile against the Bridge when required:
+  // compile 'com.newrelic.agent.java:agent-bridge:3.30.0'
+}
+
+jar {
+  manifest {
+       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-amf-platform-runtime'
+       attributes 'Implementation-Vendor': 'New Relic'
+       attributes 'Implementation-Vendor-Id': 'Field Instrumentation'
+       attributes 'Implementation-Version': 1.0
+  }
+}
+
+verifyInstrumentation {
+  // See Verifier plugin documentation:
+  // https://source.datanerd.us/java-agent/gradle-verify-instrumentation-plugin
+}
