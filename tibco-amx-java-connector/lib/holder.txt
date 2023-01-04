@@ -1,0 +1,2 @@
+Find the corresponding jar in your Tibco BPM installation (* represents a version number)
+amx-bpm-java-service-connector-*.jar
