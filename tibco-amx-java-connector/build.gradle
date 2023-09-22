@@ -6,7 +6,7 @@ dependencies {
   // Agent and Weave API jars:
   implementation 'com.newrelic.agent.java:newrelic-api:6.4.1'
 
-  // New Relic internal: implementation against the Bridge when required:
+  // New Relic Labs internal: implementation against the Bridge when required:
   // implementation 'com.newrelic.agent.java:agent-bridge:6.4.1'
   implementation fileTree(include: ['*.jar'], dir: 'lib')
   implementation fileTree(include: ['*.jar'], dir: '../libs')
@@ -14,8 +14,8 @@ dependencies {
 
 jar {
   manifest {
-       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-amx-java-connector'
-       attributes 'Implementation-Vendor': 'New Relic'
+       attributes 'Implementation-Title': 'com.newrelic.instrumentation.labs.tibco-amx-java-connector'
+       attributes 'Implementation-Vendor': 'New Relic Labs'
        attributes 'Implementation-Vendor-Id': 'Field Instrumentation'
        attributes 'Implementation-Version': 1.0
   }

@@ -14,8 +14,8 @@ dependencies {
 
 jar {
   manifest {
-       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-rest-binding'
-       attributes 'Implementation-Vendor': 'New Relic'
+       attributes 'Implementation-Title': 'com.newrelic.instrumentation.labs.tibco-rest-binding'
+       attributes 'Implementation-Vendor': 'New Relic Labs'
        attributes 'Implementation-Vendor-Id': 'Field Instrumentation'
        attributes 'Implementation-Version': 1.0
   }

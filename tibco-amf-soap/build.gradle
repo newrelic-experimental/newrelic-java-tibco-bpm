@@ -18,8 +18,8 @@ dependencies {
 
 jar {
   manifest {
-       attributes 'Implementation-Title': 'com.newrelic.instrumentation.tibco-amf-soap'
-       attributes 'Implementation-Vendor': 'New Relic'
+       attributes 'Implementation-Title': 'com.newrelic.instrumentation.labs.tibco-amf-soap'
+       attributes 'Implementation-Vendor': 'New Relic Labs'
        attributes 'Implementation-Vendor-Id': 'Field Instrumentation'
        attributes 'Implementation-Version': 1.0
   }
